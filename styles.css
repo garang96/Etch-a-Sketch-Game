@@ -8,6 +8,7 @@
 
 body {
     font-family: 'helvetica neue', Arial, Helvetica, sans-serif;
+    background: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5));
 }
 
 :root {
@@ -19,6 +20,7 @@ header h1 {
     font-family: 'Shizuru', cursive;
     text-align: center;
     margin: 3rem 0;
+    color: #fff;
 }
 
 .main-container {
