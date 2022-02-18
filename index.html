@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etch-a-Sketch-Game</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shizuru&display=swap" rel="stylesheet">
     <script src="script.js" defer></script>
 </head>
 
@@ -15,11 +18,11 @@
         <h1>Etch-a-Sketch-Game</h1>
     </header>
     <main class="main-container">
-        <div class="controls">
-            <input type="range" min="1" max="100" value="30">
-            <div>Grid Size: <span class="size">4</span> X <span class="size">4</span></div>
-            <button id="generate"></button>
-            <button id="clear"></button>
+        <div class="user-controls">
+            <input class="grid-range" type="range" min="1" max="100" value="20">
+            <div class="grid-size">Grid Size: <span class="size">20</span> X <span class="size">20</span></div>
+            <button id="generate">generate</button>
+            <button id="clear">clear</button>
         </div>
         <div class="grid-container">
             <div class="grid-squares"></div>
