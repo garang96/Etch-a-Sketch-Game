@@ -6,7 +6,7 @@ const clear = document.getElementById('clear');
 
 let gridSize = gridRange.value;
 console.log(gridSize);
-let cellWidth = gridSquares.offsetWidth / gridSize;
+let cellWidth = (gridSquares.offsetWidth / gridSize) + `px`;
 console.log(cellWidth);
 
 

@@ -82,3 +82,9 @@ button {
     grid-template-columns: repeat(var(--gridColumns), var(--cellWidth));
     background-color: #fefefe;
 }
+
+.cell {
+    width: var(--cellWidth);
+    height: var(--cellWidth);
+    border: 1px solid black;
+}
