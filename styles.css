@@ -77,8 +77,8 @@ button {
 }
 
 .grid-squares {
-    width: 800px;
-    height: 800px;
+    width: 700px;
+    height: 700px;
     display: grid;
     grid-template-columns: repeat(var(--gridColumns), var(--cellWidth));
     background-color: #fefefe;
