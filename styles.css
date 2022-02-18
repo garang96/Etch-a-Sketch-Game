@@ -32,7 +32,7 @@ header h1 {
 .user-controls {
     width: 15rem;
     height: 15rem;
-    background-color: #333;
+    background-color: rgba(51, 51, 51, 0.788);
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -71,7 +71,7 @@ button {
 }
 
 .grid-container {
-    background-color: #333;
+    background-color: rgba(51, 51, 51, 0.788);
     padding: 20px;
     border-radius: 5px;
 }
@@ -87,5 +87,5 @@ button {
 .cell {
     width: var(--cellWidth);
     height: var(--cellWidth);
-    border: 1px solid black;
+    border: 1px solid rgba(0, 0, 0, 0.301);
 }
