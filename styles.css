@@ -59,6 +59,7 @@ button {
     font-size: 20px;
     color: #fff;
     cursor: pointer;
+    transition: all .3s ease;
 }
 
 #generate {
@@ -76,8 +77,8 @@ button {
 }
 
 .grid-squares {
-    width: 40rem;
-    height: 40rem;
+    width: 800px;
+    height: 800px;
     display: grid;
     grid-template-columns: repeat(var(--gridColumns), var(--cellWidth));
     background-color: #fefefe;
