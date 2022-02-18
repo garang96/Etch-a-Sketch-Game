@@ -5,13 +5,13 @@ const clear = document.getElementById('clear');
 const sizes = document.querySelectorAll('.size');
 
 let currentGridSize = gridRange.defaultValue;
-console.log(gridSquares.offsetWidth)
+// console.log(gridSquares.offsetWidth)
 let gridCell;
 
 //function to track the slider input value
 
 const sliderValue = (e) => {
-    console.log(e.target.value);
+    // console.log(e.target.value);
     currentGridSize = e.target.value;
     generate.disabled = false;
     generate.style.background = 'orange'
