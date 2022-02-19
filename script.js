@@ -10,15 +10,16 @@ let gridCell;
 
 //function to track the slider input value
 
-const sliderValue = (e) => {
+const sliderValue = (inputVal) => {
     // console.log(e.target.value);
-    currentGridSize = e.target.value;
+    currentGridSize = inputVal.target.value;
     generate.disabled = false;
     generate.style.background = 'orange'
     generate.style.color = '#fff';
     for (const size of sizes) {
         size.innerText = currentGridSize;
     }
+    clearCells();
 }
 
 //function to create grid cells and add them to grid container
@@ -36,7 +37,7 @@ const gridGame = (givenSize) => {
     }
 }
 
-//function to make grid cells appear in the grid container
+//function to display grid cells in grid container
 
 const generateCells = (e) => {
     gridGame(+currentGridSize);
@@ -60,6 +61,29 @@ const clearCells = (e) => {
 
 }
 
+const generateRandomRGB = () => {
+    const randomColorValue1 = Math.floor(Math.random() * 256);
+    const randomColorValue2 = Math.floor(Math.random() * 256);
+    const randomColorValue3 = Math.floor(Math.random() * 256);
+    const randomColor = `rgb(${randomColorValue1}, ${randomColorValue2}, ${randomColorValue3})`;
+    return randomColor;
+}
+
+//function to display hover effect
+
+const hoverEffect = (hover) => {
+    const target = hover.target;
+    if (target.className !== 'cell') return;
+    target.style.background = generateRandomRGB();
+}
+
+const unhoverEffect = (unhover) => {
+    const target = unhover.target;
+    target.style.background = '#fefefe'
+}
+
 generate.addEventListener('click', generateCells);
 clear.addEventListener('click', clearCells);
 gridRange.addEventListener('input', sliderValue);
+gridSquares.addEventListener('mouseover', hoverEffect);
+gridSquares.addEventListener('mouseout', unhoverEffect);

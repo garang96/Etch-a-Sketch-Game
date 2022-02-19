@@ -88,4 +88,6 @@ button {
     width: var(--cellWidth);
     height: var(--cellWidth);
     border: 1px solid rgba(0, 0, 0, 0.301);
+    background-color: #fefefe;
+    transition: all .4s ease;
 }
